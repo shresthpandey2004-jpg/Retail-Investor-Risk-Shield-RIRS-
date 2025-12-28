@@ -1,0 +1,20 @@
+{
+  "name": "retail-investor-risk-shield",
+  "version": "1.0.0",
+  "description": "Professional SaaS platform to protect retail investors from unnecessary losses, risky trades, and emotional mistakes",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["fintech", "saas", "risk-management", "stock-market", "investor-protection"],
+  "author": "RIRS Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
